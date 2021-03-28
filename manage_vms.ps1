@@ -20,6 +20,7 @@ for ($i = 0; $i -lt $vmlist.Count; $i++) {
 			if ($skipStarting -ne 1) {
 				# https://www.virtualbox.org/manual/ch07.html#vboxheadless
 				$startResult = C:\Program` Files\Oracle\VirtualBox\VBoxManage.exe startvm $vmid --type headless
+				Write-Host ("Start operation completed: {0}" -f $startResult)
 			} else {
 				Write-Host "`$skipStarting is set to 1, so we are not really starting the VM."
 			}
