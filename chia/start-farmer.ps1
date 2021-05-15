@@ -1,0 +1,1 @@
+chia.exe start farmer
